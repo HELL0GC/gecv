@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+  
+   .{
+      box-sizing: border-box;
+    }
+    body{
+      position: fixed;
+      padding: 0px 0px;
+      margin: 0px 0px;
+    }
+    .main{
+      width: 100vw;
+      height: 100vh;
+      background:black;
+      position: fixed;
+    }
+     @keyframes gen{
+      from{
+        left:-400px;
+        transform:rotate(-60deg);
+      }
+      to{
+        left:0px;;
+        transform: rotate(0deg)
+      }
+    }
+         @keyframes genr{
+      from{
+        left:400px;
+        transform:rotate(60deg);
+      }
+      to{
+        left:0px;;
+        transform: rotate(0deg)
+      }
+    }
+    
+    
+    
+    /* back button*/
+    .back{
+      background:black;
+      color: yellow;
+      font-weight: bolder;
+      width:12vw;
+      height: 12vw;
+      position: fixed;
+      border-radius: 50%;
+      border: 2px solid yellow;
+      left:3vw;
+      top:1vh;
+      font-size:30px;
+      box-shadow:0px 0px 10px black;
+      animation: bac 1s 3 alternate;
+    }
+ 
+    @keyframes bac{
+    0%{
+      box-shadow:0px 0px 30px blue;
+      color:blue;
+    }
+    100%{
+      box-shadow:0px 0px 30px red;
+      color:#f66;
+    }
+    }
+    
+    /* slide 1 start  */
+    
+    .homepage{
+      width: 100vw;
+      height: 100vh;
+      background-image:url(gecv1.jpg);
+      background-size:100vw 100vh;
+      background-repeat:no-repeat;
+      text-align: center;
+      position: fixed;
+      font-family:serif;
+      z-index:1 ;
+      /* slide 1 none*/
+    }
+    .t1{
+      color:white;
+      font-size: 25px;
+      font-weight: bold;
+      text-shadow:0px 0px 5px red;
+      animation: gect 2s 1;
+    }
+    .t2{
+      color:black;
+      font-size: 20px;
+    }
+    .homepage img{
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      animation: gecvlogo 2s 1;
+    }
+    .butt1{
+      width: 130px;
+      height: 50px;
+      border-radius:17px;
+      background: #444;
+      color:greenyellow;
+      border: 3px solid red;
+      box-shadow: -5px -5px 3px black inset;
+      position:relative;
+      display: block;
+      margin:50vh auto;
+      text-shadow:0px 0px 5px greenyellow;
+      animation:gecbut1 2.5s 1 linear;
+      font-size:30px;;
+    }
+    
+    @keyframes gecvlogo{
+      0%{margin-top: 100vh;width:140px;height: 140px;}
+      80%{margin-top: 0px;width:140px;height: 140px}
+      100%{margin-top:0px;width:100px;height: 100px;}
+    }
+    
+    @keyframes gect{
+      0%{text-shadow:0px 0px 0px yellow;}
+     70%{text-shadow:0px 0px 3px yellow;}
+    100%{text-shadow:0px 0px 7px red;}
+    }
+    
+    @keyframes gecbut1{
+    0%{margin:70vh auto; width:200px;
+      height: 80px;
+    }
+    100%{margin:50vh auto;
+      width: 140px;
+      height:50px;
+    }
+    }
+    
+    
+    /* page 2 option start */
+     .option{
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      position:fixed;
+      align-items: center;
+      color: white;
+      font-family: serif;
+      background-image:linear-gradient(orangered,yellow);
+      /* slide 1 none*/
+      z-index:0;
+     
+    }
+    .content{
+      width: 100vw;
+      height: 95vh;
+      overflow: scroll;
+    }
+    .hedding1{
+      background-image:url("gecv7.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color:yellow;
+      margin:0px;
+      height: 40px;
+      border-bottom: 5px solid #9f0;
+    }
+   .optcommon{
+     width:96vw;
+     border-radius:20px;
+     background:rgba(0,200,200,1);
+     display: inline-block;
+     margin-left: auto;
+     margin-bottom:15px;
+     margin-top:3px;
+     border:3px solid blue;
+     overflow:scroll;
+   }
+    .hedding2{
+      background:blue;;
+      color:#f07;
+      margin:0px;
+      font-size: 20px;
+    }
+    .option span{
+      color:Black;
+      display: block;
+      text-align:left;
+    }
+   .opt{
+      width: 100px;
+      height: 100px;
+      display:inline-block;
+      margin:2px;
+      text-align:center;
+      align-content:center;
+      background:#444;
+      border-radius:30px;
+      border:1px solid greenyellow;
+      box-shadow:0px 0px 20px black inset;
+      color:greenyellow;
+      text-shadow:0px 0px 5px black;
+      padding:0px auto;
+      font-family:normal;
+    }
+ .a8{
+   font-size:10px;
+   font-weight:thin;
+ }
+
+
+
+    @keyframes optcol{
+      0%{background-image:linear-gradient(pink,purple);}
+      50%{background-image:linear-gradient(blue,purple);}
+      100%{background-image:linear-gradient(blue,greenyellow);}
+    }
+   /* gec vaishali whatsApp group*/
+    .wh{height:120px;
+      border-radius:40px 40px 10px 10px;
+      
+      overflow: hidden;
+      }
+      .wh div{
+        height:30px;
+        background:#2a0;
+        margin:90px 0px;
+        font-size:10px;
+        font-weight:bold;
+        overflow: scroll;
+        text-align: center;
+        align-content: center;
+        color:white;
+      }
+    .whatsapp{
+      background:rgba(0,00,00,01);
+    }
+   .w1{
+     background-size:cover;
+   background-image:url("show.jpg");
+   }
+   .w2{
+     background-size:120px 100px;
+  background-image:url("gecv4.jpg");
+   }
+   .w3{
+     background-size:100px 120px;
+  background-image:url("redhat.jpg");
+   }
+/* holiday page start*/
+    .holi{
+      width: 100vw;
+      height:100vh;
+      background:pink;
+      margin: 0px;
+      text-align: center;
+      font-family:serif;
+      position: fixed;
+      z-index: 0;
+    
+    }
+    .holi h1{
+      margin:0px;
+      background:red;
+      color:#ff0;
+    }
+    .holi img{
+      width: 100vw;
+      height: 100vh;
+      background-size:cover;
+      filter: brightness(1),grayscale(1);
+    }
+    
+    
+    /* important link section start */
+     .link{
+      width: 100vw;
+      height:100vh;
+      background:purple;
+      margin: 0px;
+      text-align:left;
+      position: fixed;
+      z-index:0;
+    }
+     .link h1{
+      margin:0px;
+      background:purple;
+      color:greenyellow;
+      text-align: center;
+      padding-left: 0px;
+      height: 6vh;
+      font-family:serif;
+    }
+    .linkcont{
+      width: 100vw;
+      height: 94vh;
+      background-image:linear-gradient(yellow,skyblue);
+      overflow: scroll;
+    }
+    .link a{
+      
+      padding-left: 10px;
+    }
+    
+    
+    /* Gallery Gec vaishali */
+    .gallery{
+      width: 100vw;
+      position: fixed;
+      height: 98vh;
+      overflow: scroll;
+      background-image:linear-gradient(blue,pink,red,greenyellow,indigo);
+      border-bottom: 2vh solid purple;
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+      font-family:serif;
+      position:relative;
+      z-index: 0;display: none;
+    }
+    .gallery img{
+      width: 98vw;
+      background-size: contain;
+      border: 1vw solid yellow;
+      margin:2px 0px;
+      display: block;
+    }
+    .gallery h1{
+      width: 100vw;
+      height:6vh;
+      text-align: center;
+      display:inline;
+      background:;
+      left:0px;
+      top:0px;
+      padding:0px;
+      margin-top:0px;
+      color:yellow;
+      
+    }
+    
+    /* rotate loading section */
+    
+    .load{
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      background:rgba(70,70,0,0.6);
+      position: fixed;
+      margin: 0px;
+      color:#8f8;
+    }
+    .load button{
+      background: red;
+      color: yellow;
+      border-radius: 6px;
+      border:1px solid gold;
+    }
+    .rot{
+      width: 50px;
+      height: 50px;
+      border-radius:50%;
+      background:transparent;
+      display: block;
+      margin:30vh auto;
+      position:;
+      border-top:4px dotted orangered;
+   border-left:4px dotted greenyellow;
+   border-bottom:4px dotted deepskyblue;
+   border-right:4px dotted yellow;
+   animation: rota 3s linear infinite;
+    }
+   @keyframes rota{
+     from{transform: rotate(0deg)}
+     to{transform: rotate(360deg)}
+   }
+    
+    
+    /* select semester */
+    .selectsem{
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      background:rgba(200,200,0,0.8);
+      position: fixed;
+      margin: 0px;
+      color:#f00;
+      z-index:0;
+      
+    }
+    .selectsem h3{
+      background: blue;
+      width: 100vw;
+      height: 10vh;
+      font-size: 30px;
+    }
+    .op{
+      width: 100px;
+      height: 100px;
+      display:inline-block;
+      margin:5px;
+      text-align: center;
+      align-content: center;
+      padding: auto;
+      background:green;
+      border-radius:10px;
+      border:1px solid greenyellow;
+      box-shadow:0px 0px 20px black inset;
+      color:white;
+      text-shadow:0px 0px 5px black;
+    }
+    
+
+
+
+
+</style>
+<body>
+  
+   <div class="load" id="load">
+  <div class="rot"></div>
+  plz Wait <br>content is loading... <br><br>
+  <button class="back do" id="lat" onclick="back()"><</button>
+</div>
+
+ <div class="load" id="loadx">
+  <div class="rot"></div>
+  plz Wait <br>content is loading... <br><br>
+</div>
+
+
+
+<div class="a homepage" id="homepage"> 
+<img src="gecvlogo.jpg" alt="loading...">
+  <span class="t1"><br>GOVERMENT ENGINEERING COLLEGE <br><span class="t2">VAISHALI, PATNA(BIHAR)</span></span><br><p>~made by HELLOGC</p>
+<button class="butt1" onclick="back()">NEXT</button>
+</div>
+
+
+
+
+<div class="a option" id="option">
+  <div class="hed1div">
+  <h3 class="hedding1">-- *Welcome to GEC VAISHALI* --</h3></div>
+  <div class="content">
+  <div class="impodiv optcommon">
+  <h3 class="hedding2">Importent</h3>
+  <div class="opt a1" onclick="holio()">Holidays 2024</div>
+  <div class="opt a2" onclick="linko()">importent links</div> 
+  <div class="opt a6" onclick="gallo()">GALLERY <br> gec vaishali</div>
+ <a href="http://beu-bih.ac.in/BEUP/Default.aspx"><div class="opt a3"onclick="gecwebo()">BEU official web</div></a>
+  <a href="https://vaishali.nic.in/">
+  <div class="opt a4" onclick="gecwebo()">gec vaishali official web</div></a>
+  <a href="http://beu-bih.ac.in/BEUP/NoticeBoard.aspx">
+  <div class="opt a5"onclick="gecwebo()">BEU notice bord</div></a>
+ 
+  </div>
+  <div class="optcommon syllbdiv">
+  <h3 class="hedding2">SYLLUBUS</h3>
+  <div class="opt a1"onclick="gecbo(11)">CSE</div>
+  <div class="opt a2"onclick="gecbo(12)">CSE(IOT)</div>
+  <div class="opt a3"onclick="gecbo(13)">ECE</div><br>
+  <div class="opt a4"onclick="gecbo(14)">ECE(ACT)</div>
+  <div class="opt a5"onclick="gecbo(15)">Civil</div>
+  <div class="opt a6"onclick="gecbo(16)">ME</div><br>
+  <div class="opt a7"onclick="gecbo(17)">EE</div>
+  <div class="opt a8"onclick="beusylb()">BEU web. Syllabus</div>
+</div>
+
+<div class="12div optcommon">
+ <h3 class="hedding2">12th NCERT</h3>
+ <a href="https://drive.google.com/file/d/11_Yi-WhxU58iFP3WPByPpBi9BKUAnwyL/view?usp=drivesdk"><div class="opt a3"onclick="gecwebo()">MATHS</div></a> 
+ <a href="https://drive.google.com/file/d/1-6-c99SYT0PmbdbHS3F2BhoZ_D8Xn9dj/view?usp=drivesdk"><div class="opt a3"onclick="gecwebo()">CHEMISTRY</div></a> 
+ <a href="https://drive.google.com/file/d/1-6H3MS56_gZSCCPDV-cnbJ8e4npbx2GH/view?usp=drivesdk"><div class="opt a3"onclick="gecwebo()">PHYSICS</div></a></div>
+ <div class="11div optcommon">
+ <h3 class="hedding2">11th NCERT</h3>
+ <a href="https://drive.google.com/file/d/11kpRQZxmc5CMHoo8veTpAY7YVhs2vdzS/view?usp=drivesdk"><div class="opt a3"onclick="gecwebo()">MATHS</div></a> 
+ <a href="https://drive.google.com/file/d/1-2-dOX2apQHEebGolfE4qHgELVQOq9oL/view?usp=drivesdk"><div class="opt a3"onclick="gecwebo()">CHEMISTRY</div></a> 
+ <a href="https://drive.google.com/file/d/1-zHDSvtkL_vpUqK_LPoZ3xFtI4Ci-4an/view?usp=drivesdk"><div class="opt a3"onclick="gecwebo()">PHYSICS</div></a></div>
+ 
+<div class="whatsapp optcommon">
+ <h3 class="hedding2">GEC vaishali WhatsApp group</h3>
+ <div class="opt wh w2"onclick="what(2)"><div>GEC vaishali (24-28)</div></div>
+ 
+<div class="opt wh w1"onclick="what(1)">
+<div>GEC vaishali SHOW your SKILL</div></div>
+
+<div class="opt wh w3"onclick="what(3)">
+<div>CSE and IOT 2024 batch</div></div>
+ </div>
+ <br><br>
+ </div>
+</div>
+
+
+
+<div class="a holi" id="holi">
+  <button class="back" onclick="back()"><</button>
+  <h1>HOLIDAY 2024</h1>
+  <img src="holiday.jpg" alt="loading">
+</div>
+
+<div class="a link" id="link">
+  <h1>Importent link</h1> 
+  <button class="back" onclick="back()"><</button>
+  <div class="linkcont">
+  <br>
+  <a href="https://youtube.com/@gec_vaishali_tpcell?si=wq62_jma6lYcHovs">1.  GEC Vaishali YouTube Channel</a><br><br>
+  <a href="https://github.com/">2.  GitHub</a><br><br>
+  <a href="https://devpost.com/">3.  HACKATON</a><br><br>
+  <a href="https://workspace.google.com/intl/en_in/lp/business/?utm_source=google&utm_medium=cpc&utm_campaign=1707696-Workspace-APAC-IN-en-BKWS-EXA-HV&utm_content=text-ad-none-none-DEV_m-CRE_608675944021-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt-Workspace-N/A-KWID_43700079340244364-kwd-346911454270&userloc_9298433-network_g&utm_term=KW_google%20workspace&gad_source=1&gclid=EAIaIQobChMIpdmNiZeiiAMVlwZ7Bx0OJzXWEAAYASAAEgLS5_D_BwE&gclsrc=aw.ds">4.  GOOGLE workspace<br><br>
+  <a href="https://nptel.ac.in/">5.  NPTEL official WEB</a><br><br>
+  <a href="https://jeemain.nta.ac.in/">6.  JEE Main official website</a><br><br>
+  <a href="https://jeeadv.ac.in/">7.  JEE Advance official website</a><br><br>
+  <a href="https://www.nta.ac.in/">8.  National Testing Agency </a><br><br>
+  <a href="https://youtube.com/@nptel-nociitm9240?si=B8lqCagALORfZwoQ">9.  NPTEL-IITM lecture on YouTube</a><br><br>
+  <a href="https://youtube.com/@gajendrapurohit?si=7058t_yYjIB-C5Y1">10. Mathematics By Gajendra purohit sir</a><br><br>
+  <a href="https://youtube.com/@apnacollegeofficial?si=wJ0QPGoOc815USIO">11. Apna College YouTube channel</a><br><br>
+  <a href="https://youtube.com/@codewithharry?si=O0zwVQh8ozxtzim5">12. Coading With Harry YouTube Channel</a><br><br>
+  <a href="https://youtu.be/ERCMXc8x7mc?si=zQUNUwQZv1PMRGEg">13. PYTHON By apna college on YT </a><br><br>
+  <a href="https://youtu.be/irqbmMNs2Bo?si=5hOG7bjasndRCKJN">14.  C programing in One shot</a><br><br>
+  <a href="https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&si=5ym2IvsqA6e_QxJ5">15. DSA in c++ by apna college on YT</a><br><br>
+  <a href="https://youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop&si=AQFdlt7tH55JVVvY">16. JAVA by apna college on YT</a><br><br>
+   
+  <a href="https://youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n&si=neozs2hhfoI31i9B">17.  Web DEVELOPMENT by Apna college YT</a><br><br>
+  <a href="https://youtube.com/playlist?list=PLUhfM8afLE_Ok-0Lx2v9hfrmbxi3GgsX1&si=uph_f_GLumkUw6ff">18.  Android Studio full course on YT</a><br><br>
+  <a href="https://youtube.com/playlist?list=PLW-zSkCnZ-gA5Jn6gZtUa6-aG0OoRZyb6&si=Mz3y5PB2tIIeGfdW">19.  Photoshop full course On YT</a><br><br>
+  <a href="https://youtube.com/playlist?list=PL2ksDap3jYZs-YQyaxFTZ7Gs0om2MpMbL&si=m7Y_A-LS9IBofU1E">20.  3D Animation full course on YT</a><br><br>
+  <a href="https://www.instagram.com/">21.  INSTAGRAM </a><br><br>
+  <a href="https://m.facebook.com/">22.  FACEBOOK</a><br><br>
+  <a href="https://www.youtube.com/">23.  YOUTUBE</a><br><br>
+  <a href="https://x.com/?lang=en&mx=2">24.  TWITTER</a><br><br>
+  <a href="m.google.com">25.  GOOGLE</a><br><br>
+  <a href="https://www.bing.com/">26.  BING</a><br><br>
+  <a href="https://www.flipkart.com/">27.  FLIPKART</a><br><br>
+  <a href="https://www.amazon.in/?&tag=googinhydmabk-21&ref=pd_sl_50mih90ikb_e&adgrpid=159067175652&hvpone=&hvptwo=&hvadid=674834481301&hvpos=&hvnetw=g&hvrand=9732048285041764872&hvqmt=e&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9298433&hvtargid=kwd-64107830&hydadcr=28227_2321542&gad_source=1">28.  AMAZON</a><br><br>
+  <a href="https://www.microsoft.com/en-in">29.  MICROSOFT</a><br><br>
+  <a href="https://gate2025.iitr.ac.in/">30.  GATE</a><br><br>
+  <a href="https://upsc.gov.in/">31.  UPSC</a><br><br>
+  <a href="https://bceceboard.bihar.gov.in/">32.  BCECEB</a><br><br>
+  <a href="https://www.webintoapp.com/html-to-app">33.  HTML to APK</a><br><br>
+  <a href="https://web.telegram.org/">34.  TELEGRAM</a><br><br>
+  <a href="https://youtube.com/playlist?list=PLw9zMOoodWb6KogQMHqAfXk_y0tgJSzI3&si=dgxWKWbCzBYTYKfY">35.  HTML full course YT</a><br><br>
+  <a href="https://youtube.com/playlist?list=PLw9zMOoodWb4OtAt8aDKqklEJDqZHYXBm&si=zCiGM3zZUnGr28cO">36.  CSS full course on YT</a><br><br>
+  <a href="https://youtube.com/playlist?list=PLw9zMOoodWb5YB2TqrboVoSBkCKaOsvE_&si=5Kbz_HrCMYebzcJA">37.  JavaScript full course on YT</a><br><br>
+  
+  
+  
+  <br><br>...
+  </div>
+</div>
+
+
+<div class="a gallery" id="gall">
+  <h1>GALLERY</h1>
+  <button class="back" onclick="back()"><</button>
+ <img src="gecv1.jpg" alt="loading">
+ <img src="gecv2.jpg" alt="loading">
+ <img src="gecv3.jpg" alt="loading">
+ <img src="gecv4.jpg" alt="loading">
+ <img src="gecv5.jpg" alt="loading">
+ <img src="gecv6.jpg" alt="loading">
+ <img src="gecv8.jpg" alt="loading">
+ <img src="gecv9.jpeg" alt="loaing">
+ <img src="gecv10.jpg"alt="loading">
+ <img src="gecv11.jpg"alt="loading">
+ <img src="gecv12.jpg"alt="loading">
+ <img src="gecv13.jpg"alt="loading">
+ <img src="gecv14.jpg"alt="loading">
+</div>
+
+
+<div class="a selectsem" id="ssem"> 
+<button class="back" onclick="back()"><</button>
+  <h3 class="hedding2">select semester</h3>
+  <div class="op s1"onclick="gecs(1)">sem 1</div>
+  <div class="op s2"onclick="gecs(2)">sem 2</div>
+  <div class="op s3"onclick="gecs(3)">sem 3</div><br>
+  <div class="op s4"onclick="gecs(4)">sem 4</div>
+  <div class="op s5"onclick="gecs(5)">sem 5</div>
+  <div class="op s6"onclick="gecs(6)">sem 6</div><br>
+  <div class="op s7"onclick="gecs(7)">sem 7</div>
+  <div class="op s8"onclick="gecs(8)">sem 8</div>
+ </div>
+  
+
+</body>
+<script>
+var branch;
+var sem;
+
+var dox=document.getElementsByClassName('a');
+var homepage=document.getElementById('homepage');
+  var option=document.getElementById('option');
+  var holi=document.getElementById('holi');
+  var gall=document.getElementById('gall');
+  var link=document.getElementById('link');
+  var load=document.getElementById('load');
+  var ssem=document.getElementById('ssem');
+  var loadx=document.getElementById('loadx');
+  var alink=document.getElementsByTagName('a');
+
+
+function back(){
+  option.style='z-index:5;animation:gen.5s 1;';
+  ssem.style='z-index:0';
+  holi.style='z-index:0';
+  gall.style='z-index:0';
+  link.style='z-index:0';
+  load.style='z-index:0';
+  loadx.style='z-index:0';
+}
+
+function holio(){
+  holi.style='z-index:5;animation:genr .5s 1;';
+  option.style='z-index:0';
+  gall.style='z-index:0';
+  link.style='z-index:0';
+  load.style='z-index:0';
+  loadx.style='z-index:0';
+}
+function gallo(){
+  gall.style='z-index:5;animation:genr .5s 1;display:block';
+  option.style='z-index:0';
+  link.style='z-index:0';
+  load.style='z-index:0';
+  loadx.style='z-index:0';
+}
+
+function linko() {
+  link.style = 'z-index:5;animation:genr .5s 1;display:block';
+  option.style = 'z-index:0';
+  gall.style = 'z-index:0';
+  load.style = 'z-index:0';
+  loadx.style = 'z-index:0';
+}
+
+function gecbo(br){
+  branch=br;
+  ssem.style='z-index:5;animation:genr .5s 1;';
+  option.style='z-index:1';
+  holi.style='z-index:0';
+  gall.style='z-index:0';
+  link.style='z-index:0';
+  load.style='z-index:0';
+  loadx.style='z-index:0';
+}
+
+function gecwebo(se){
+  sem=se;
+  ssem.style='z-index:0;';
+  option.style='z-index:1';
+  holi.style='z-index:0';
+  gall.style='z-index:0';
+  link.style='z-index:0';
+  load.style='z-index:5';
+  loadx.style='z-index:0';
+}
+
+function beusylb(){
+  window.open('http://beu-bih.ac.in/BEUP/Syllabus.aspx')
+}
+
+
+
+
+
+
+
+function gecs(c){
+    sem=c;
+    branch =parseInt(branch);
+    sem=parseInt(sem);
+                   
+                   if(branch==11){
+    check1();}else if(branch==12){
+    check2();}else if(branch==13){
+    check3();}else if(branch==14){
+    check4();}else if(branch==15){
+    check5();}else if(branch==16){
+    check6();}else if(branch==17){ 
+    check7();}else{
+   //   alert('wrong');
+    }
+    homepage.style='display:none;';
+    option.style='display:none;';
+    link.style='display:none;';
+    holi.style='display:none;';
+    gall.style='display:none;';
+    load.style='display:block;z-index:5;';
+    ssem.style='display:block;';
+  }
+ 
+
+
+function check1(){
+  if(sem==1){
+      //alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/cse1stsem.html','_self');
+    }else if(sem==2){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/cse2ndsem.html','_self');
+    }else if(sem==3 ){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/cse3rdsem.html','_self');
+    }else if(sem==4){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/cse4thsem.html','_self');
+    }else if(sem==5){
+    //  alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/cse5thsem.html','_self');
+    }else if(sem==6){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/cse6thsem.html','_self');
+    }else if(sem==7){
+     // alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/cse7thsem.html');
+    }else if(sem==8){
+   // alert('ECE'+ branch+'sem'+sem); 
+    window.open('https://abhishekkumar1437.github.io/AKU-website/cse8thsem.html');
+    }
+}
+
+
+function check2(){
+  if(sem==1){
+      //alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/cse1stsem.html','_self');
+    }else if(sem==2){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/cse2ndsem.html','_self');
+    }else if(sem==3 ){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/cse3rdsem.html','_self');
+    }else if(sem==4){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/cse4thsem.html','_self');
+    }else if(sem==5){
+    //  alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/cse5thsem.html','_self');
+    }else if(sem==6){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/cse6thsem.html','_self');
+    }else if(sem==7){
+     // alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/cse7thsem.html');
+    }else if(sem==8){
+   // alert('ECE'+ branch+'sem'+sem); 
+    window.open('https://abhishekkumar1437.github.io/AKU-website/cse8thsem.html');
+    }
+}
+      
+    
+function check3(){
+  if(sem==1){
+      //alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/ece1stsem.html','_self');
+    }else if(sem==2){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/ece2ndsem.html','_self');
+    }else if(sem==3 ){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/ece3rdsem.html','_self');
+    }else if(sem==4){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/ece4thsem.html','_self');
+    }else if(sem==5){
+    //  alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/ece5thsem.html','_self');
+    }else if(sem==6){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/ece6thsem.html','_self');
+    }else if(sem==7){
+     // alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/ece7thsem.html');
+    }else if(sem==8){
+   // alert('ECE'+ branch+'sem'+sem); 
+    window.open('https://abhishekkumar1437.github.io/AKU-website/ece8thsem.html');
+    }
+}
+
+function check4(){
+  if(sem==1){
+      //alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/ece1stsem.html','_self');
+    }else if(sem==2){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/ece2ndsem.html','_self');
+    }else if(sem==3 ){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/ece3rdsem.html','_self');
+    }else if(sem==4){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/ece4thsem.html','_self');
+    }else if(sem==5){
+    //  alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/ece5thsem.html','_self');
+    }else if(sem==6){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/ece6thsem.html','_self');
+    }else if(sem==7){
+     // alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/ece7thsem.html');
+    }else if(sem==8){
+   // alert('ECE'+ branch+'sem'+sem); 
+    window.open('https://abhishekkumar1437.github.io/AKU-website/ece8thsem.html');
+    }
+}
+
+function check5(){
+  if(sem==1){
+      //alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/civil1stsem.html');
+    }else if(sem==2){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/civil2ndsem.html','_self');
+    }else if(sem==3 ){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/civil3rdsem.html','_self');
+    }else if(sem==4){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/civil4thsem.html','_self');
+    }else if(sem==5){
+    //  alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/civil5thsem.html','_self');
+    }else if(sem==6){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/civil6thsem.html','_self');
+    }else if(sem==7){
+     // alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/civil7thsem.html');
+    }else if(sem==8){
+   // alert('ECE'+ branch+'sem'+sem); 
+    window.open('https://abhishekkumar1437.github.io/AKU-website/civil8thsem.html');
+    }
+}
+
+function check6(){
+  if(sem==1){
+      //alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/mech1stsem.html');
+    }else if(sem==2){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/mech2ndsem.html','_self');
+    }else if(sem==3 ){
+   // alert('ECE'+ branch+'sem'+sem);
+    window.open('https://abhishekkumar1437.github.io/AKU-website/mech3rdsem.html','_self');
+    }else if(sem==4){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/mech4thsem.html','_self');
+    }else if(sem==5){
+    //  alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/mech5thsem.html','_self');
+    }else if(sem==6){
+    // alert('ECE'+ branch+'sem'+sem);
+     window.open('https://abhishekkumar1437.github.io/AKU-website/mech6thsem.html','_self');
+    }else if(sem==7){
+     // alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/mech7thsem.html');
+    }else if(sem==8){
+   // alert('ECE'+ branch+'sem'+sem); 
+    window.open('https://abhishekkumar1437.github.io/AKU-website/mech8thsem.html');
+    }
+}
+
+
+
+
+function check7(){
+  if(sem==1){
+   //   alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/eee1stsem.html');
+    }else  if(sem==2){
+   //   alert('ECE'+ branch+'sem'+sem);
+      window.open('https://abhishekkumar1437.github.io/AKU-website/eee2stsem.html');
+    }else if (sem == 3) {
+       //   alert('ECE'+ branch+'sem'+sem);
+       window.open('https://abhishekkumar1437.github.io/AKU-website/eee3stsem.html');
+     } else if (sem == 4) {
+        //   alert('ECE'+ branch+'sem'+sem);
+        window.open('https://abhishekkumar1437.github.io/AKU-website/eee4stsem.html');
+      } else if (sem == 5) {
+         //   alert('ECE'+ branch+'sem'+sem);
+         window.open('https://abhishekkumar1437.github.io/AKU-website/eee5stsem.html');
+       } else if (sem == 6) {
+          //   alert('ECE'+ branch+'sem'+sem);
+          window.open('https://abhishekkumar1437.github.io/AKU-website/eee6stsem.html');
+        } else if (sem == 7) {
+           //   alert('ECE'+ branch+'sem'+sem);
+           window.open('https://abhishekkumar1437.github.io/AKU-website/eee7stsem.html');
+         } else if (sem == 8) {
+            //   alert('ECE'+ branch+'sem'+sem);
+            window.open('https://abhishekkumar1437.github.io/AKU-website/eee8stsem.html');
+          }
+}
+
+
+
+//for whatsApp***
+function what(wh){
+ let what=wh;
+  if(wh==1){
+   // alert('hiiiii')
+    window.open('https://chat.whatsapp.com/CVDvD1Zg2UxFXqlf7ZnSbj');
+  }else if(wh==2){
+  //  alert('hey');
+   alert('WE NEED GROUP ADMIN PERMISSION FOR INVITE NEW MEMBER IN GROUP \n \nTILL WAIT...\n \n❤❤ ThankYou ❤❤');
+   // window.open('');
+  }else if(wh==3){
+    alert('WE NEED GROUP ADMIN PERMISSION FOR INVITE NEW MEMBER IN GROUP \n \nTILL WAIT...\n \n❤❤ ThankYou ❤❤');
+   // window.open('');
+  }
+}
+
+
+</script>
+</html>
